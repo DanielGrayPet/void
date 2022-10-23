@@ -56,7 +56,7 @@ export default function NoteOperations() {
       <div className={styles.notesDisplay}>
         {notesArray.map((note) => {
           return (
-            <div className={styles.notesInner}>
+            <div key={note.id} className={styles.notesInner}>
               <h4>{note.noteTitle}</h4>
             </div>
           );
